@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1894,
+        "title": "Сотрудник 2",
+        "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z\" \/><\/svg>",
+        "keywords": [],
+        "slug": "lazyblock\/member2",
+        "description": "",
+        "category": "text",
+        "category_label": "text",
+        "supports": {
+            "customClassName": true,
+            "anchor": false,
+            "align": [
+                "wide",
+                "full"
+            ],
+            "html": false,
+            "multiple": true,
+            "inserter": true
+        },
+        "ghostkit": {
+            "supports": {
+                "spacings": false,
+                "display": false,
+                "scrollReveal": false,
+                "frame": false,
+                "customCSS": false
+            }
+        },
+        "controls": {
+            "control_f21ad64b2a": {
+                "type": "image",
+                "name": "foto",
+                "default": "",
+                "label": "Фото",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "true",
+                "preview_size": "thumbnail",
+                "placeholder": "",
+                "characters_limit": ""
+            },
+            "control_02d99f4001": {
+                "type": "url",
+                "name": "fb",
+                "default": "",
+                "label": "Профиль в FB",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "false",
+                "placeholder": "",
+                "characters_limit": ""
+            },
+            "control_95e9204a43": {
+                "type": "url",
+                "name": "google",
+                "default": "",
+                "label": "Профиль в G+",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "false",
+                "placeholder": "",
+                "characters_limit": ""
+            },
+            "control_17b84e4fa8": {
+                "type": "url",
+                "name": "insta",
+                "default": "",
+                "label": "Профиль в Insta",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "false",
+                "placeholder": "",
+                "characters_limit": ""
+            },
+            "control_be992e4879": {
+                "type": "url",
+                "name": "linkedin",
+                "default": "",
+                "label": "Профиль в Linkedin",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "false",
+                "placeholder": "",
+                "characters_limit": ""
+            },
+            "control_c8184f4d1f": {
+                "type": "text",
+                "name": "name",
+                "default": "Иванов Иван",
+                "label": "Имя и фамилия",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "true",
+                "placeholder": "Имя и Фамилия",
+                "characters_limit": ""
+            },
+            "control_0eeb564431": {
+                "type": "text",
+                "name": "dolzhnost",
+                "default": "WordPress Developer",
+                "label": "Должность",
+                "help": "",
+                "child_of": "",
+                "placement": "inspector",
+                "width": "100",
+                "hide_if_not_selected": "false",
+                "save_in_meta": "false",
+                "save_in_meta_name": "",
+                "required": "true",
+                "placeholder": "Должность",
+                "characters_limit": ""
+            }
+        },
+        "code": {
+            "output_method": "php",
+            "editor_html": "",
+            "editor_callback": "",
+            "editor_css": "",
+            "frontend_html": "<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3 col-sm-6\">\r\n            <div class=\"our-team\">\r\n                <div class=\"pic\">\r\n\t\t\t\t\r\n\t\t\t\t<img src=\"<?php echo esc_url( $attributes['foto']['url'] ); ?>\">\r\n\t\t\t\t\r\n\t\t\t\t<ul class=\"social\">\r\n\t\t\t\t  \r\n\t\t\t\t  <?php if ( $attributes['fb'] ) : ?>\r\n\t\t\t\t  <li><a href=\"<?php echo esc_url( $attributes['fb'] ); ?>\" class=\"fab fa-facebook\"><\/a><\/li>\r\n\t\t\t\t  <?php else: ?>\r\n\t\t\t\t  <?php endif; ?>\r\n\t\t\t\t  \r\n\t\t\t\t  <?php if ( $attributes['google'] ) : ?>\r\n\t\t\t\t  <li><a href=\"<?php echo esc_url( $attributes['google'] ); ?>\" class=\"fab fa-google-plus\"><\/a><\/li>\r\n\t\t\t\t  <?php else: ?>\r\n\t\t\t\t  <?php endif; ?>\r\n\t\t\t\t  \r\n\t\t\t\t  <?php if ( $attributes['insta'] ) : ?>\r\n\t\t\t\t  <li><a href=\"<?php echo esc_url( $attributes['insta'] ); ?>\" class=\"fab fa-instagram\"><\/a><\/li>\r\n\t\t\t\t  <?php else: ?>\r\n\t\t\t\t  <?php endif; ?>\r\n\t\t\t\t  \r\n\t\t\t\t  <?php if ( $attributes['linkedin'] ) : ?>\r\n\t\t\t\t  <li><a href=\"<?php echo esc_url( $attributes['linkedin'] ); ?>\" class=\"fab fa-linkedin\"><\/a><\/li>\r\n\t\t\t\t  <?php else: ?>\r\n\t\t\t\t  <?php endif; ?>\r\n\t\t\t\t  \r\n                    <\/ul>\r\n                <\/div>\r\n                <div class=\"team-content\">\r\n                    <h3 class=\"title\"><?php echo $attributes['name']; ?><\/h3>\r\n                    <span class=\"post\"><?php echo $attributes['dolzhnost']; ?><\/span>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n        \r\n    <\/div>\r\n<\/div>",
+            "frontend_callback": "",
+            "frontend_css": "",
+            "show_preview": "always",
+            "single_output": true
+        },
+        "condition": [
+            "post",
+            "page",
+            "wp_block"
+        ]
+    }
+]
