@@ -20,6 +20,6 @@ Lazy Blocks прекрасно подойдет для тех, кто хочет
 Файлы .json - это файлы для импорта блока с его параметрами и кодом вывода.<br>
 html_handlebars и php - только код вывода.<br>
 member.css - CSS для оформления вывода блока на фронтенде.<br>
-Папка blocks/lazyblock-member3 - это шаблон вывода блока в файле .php<br>
+Папка blocks/lazyblock-member3 - это файл шаблона темы для вывода блока<br>
 
 Инструкция: https://inwebpress.com/lazy-blocks-introduction/
