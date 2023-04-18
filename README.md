@@ -25,3 +25,5 @@ Lazy Blocks прекрасно подойдет для тех, кто хочет
 📁 output/ - файлы с примерами кода вывода блока (output).
 
 🔗 Инструкция и примеры реализации: https://inwebpress.com/lazy-blocks-introduction/
+
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://sitex.me/standwithukraine)
